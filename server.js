@@ -13,15 +13,22 @@ app.use(express.static("public"));
 
 app.get("/data", function(req, res) {
     const word = req.query.word;
-    if (word === data) {
-        res.send(`Your word: ${word} is in here`);
+    if(data.hasOwnProperty(word)){
+        res.send(`The word: "${word}" does exist!`);
+    }else{
+        res.send(`The word: "${word}" does not exist!!!`);
     }
-    // else {
-
-    //     res.send(`Your word: ${word} is not in here`);
-    // }
 
 });
+
+// app.get("/getword", (req, res)=>{
+//     const word = getword(data, word);
+//   if (word){
+//     res.send(`The ${word} is in the citionary`);
+//   }else{
+//     res.send(`The word does not exist`);
+//   }
+// });
 
 // When port is use. It needs to know which door to go into. ex:3000
 // Call back function.
