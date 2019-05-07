@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: barder-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to top, black, grey);
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: white;
+}
+
+#name {
+    font-size: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#enter {
+    font-family: 'Open Sans Condensed', sans-serif;
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+input {
+    font-family: 'Open Sans Condensed', sans-serif;
+    width: 50%;
+    height: 5%;
+    text-align: center;
+    font-size: 14px;
+    border: 1.5px;
+    border-radius: 4px;
+}
+
+button {
+    font-family: 'Open Sans Condensed', sans-serif;
+    background-color: transparent;
+    border: white;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.5s;
+    /* Safari */
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+button3:hover {
+    background-color: white;
+    color: white;
+}
+
+#results {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 20px;
+}
+
+.rectangle {
+    top: 29%;
+    left: 0%;
+    position: absolute;
+    height: 22%;
+    width: 100%;
+    background-color: #555;
+    opacity: 0.2;
+}
+
+img {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    position: absolute;
+    height: 29%;
+    width: 100%;
+    opacity: 0.1;
+}

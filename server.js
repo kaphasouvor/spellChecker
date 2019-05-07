@@ -16,7 +16,8 @@ app.get("/data", function(req, res) {
     if(data.hasOwnProperty(word)){
         res.send(`The word: "${word}" does exist!`);
     }else{
-        res.send(`The word: "${word}" does not exist!!!`);
+        res.send(`The word: " ${word} " does not exist! Please enter another word
+        !`);
     }
 
 });
